@@ -147,6 +147,31 @@ a.active {
     font-weight: bold;
 }
 
+.list__page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100%;
+}
+
+.list__page__active{
+    padding: 9px;
+    font-size: 25px;
+    color: white;
+    background-color: green;
+    border: 1px #3D3D3D inset;
+    border-radius: 10px;
+}
+
+.list__page a{
+    padding: 9px;
+    font-size: 25px;
+    /*color: white;
+    background-color: green;*/
+    border: 1px #3D3D3D inset;
+    border-radius: 10px;
+    }
+
 /*   CATALOG PRODUCTS  -  END*/
 
 
