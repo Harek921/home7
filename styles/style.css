@@ -1,0 +1,152 @@
+/*   SETTINGS PAGE  -  START*/
+
+:root {
+    --accent-color: #46A358;
+    --secondary-color: #3D3D3D;
+    --main-color: #FFFFFF;
+    --bg-secondary-color: #FBFBFB;
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-xl: 18px;
+
+    --content-width: 1300px;
+
+    --categories-menu-width: 310px;
+    --catalog-gap: 50px;
+    --categories-menu-full-width: calc(var(--categories-menu-width) + var(--catalog-gap));
+}
+
+
+body {
+    font-family: 'Cera Pro DEMO', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md);
+}
+
+a {
+    font-size: var(--font-md);
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.catalog {
+    margin-top: 20px;
+}
+
+/*   SETTINGS PAGE  -  END*/
+
+
+
+/*   CATALOG PAGE  -  START*/
+
+.catalog__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--catalog-gap);
+    }
+
+
+
+.catalog__categories {
+    background-color: var(--bg-secondary-color);
+    border: 1px solid #ccc;
+    padding: 15px;
+    min-width: var(--categories-menu-width);
+    max-width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.catalog__categories h4 {
+    font-size: var(--font-xl);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+a.active {
+    color: var(--accent-color);
+}
+
+.catalog__categories ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.sale__banner{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.sale__banner h1{
+    margin-top: 30px;
+    color: var(--accent-color);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sale__banner h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*   CATALOG PAGE  -  END*/
+
+/*   CATALOG SEARCH__MEN  -  START*/
+
+.search__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+}
+
+/*.search__url{
+    max-width: 40%;
+}
+
+.search__list{
+    min-width: 50%;
+}*/
+
+
+/*   CATALOG SEARCH__MEN  -  END*/
+
+/*   CATALOG PRODUCTS  -  START*/
+
+.catalog__products {
+    display: flex;
+    gap: 25px;
+    width: 910px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__product{
+    flex-basis: 250px;
+}
+
+.catalog__product-price{
+    margin-top: 10px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/*   CATALOG PRODUCTS  -  END*/
+
+
